@@ -4,9 +4,10 @@ const reverseString = function(string) {
     let num = stringArray.length;
     for (let i = 0; i < num; i++) {
         reverseArray.unshift(stringArray[i]);
-        console.log(string);
     }
+    let reverserWord = reverseArray.toString();
+    return reverserWord;
 };
 
 // Do not edit below this line
-//module.exports = reverseString;
+module.exports = reverseString;
