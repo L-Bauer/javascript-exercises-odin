@@ -5,7 +5,7 @@ const reverseString = function(string) {
     for (let i = 0; i < num; i++) {
         reverseArray.unshift(stringArray[i]);
     }
-    let reverserWord = reverseArray.toString();
+    let reverserWord = reverseArray.join('');
     return reverserWord;
 };
 
