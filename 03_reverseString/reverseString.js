@@ -1,7 +1,7 @@
 const reverseString = function(string) {
     const stringArray = string.split('');
     const reverseArray = [];
-    for (let i = stringArray.length; i > stringArray.length; i++) {
+    for (let i = stringArray.length; i > stringArray.length ; i++) {
         console.log(stringArray[i]);
     }
 };
