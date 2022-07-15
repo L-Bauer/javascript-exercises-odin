@@ -8,9 +8,13 @@ const subtract = function(a,b) {
     return c
 };
 
-const sum = function() {
-	
+const sum = function(sumArray) {
+	const sumResult = sumArray.reduce((total, arrayValues) => {
+        return total + arrayValues;
+    }, 0);
+    return sumResult
 };
+console.log(sum([]))
 
 const multiply = function() {
 
