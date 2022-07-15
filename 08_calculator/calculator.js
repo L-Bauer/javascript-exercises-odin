@@ -14,10 +14,9 @@ const sum = function(sumArray) {
     }, 0);
     return sumResult
 };
-console.log(sum([]))
 
-const multiply = function() {
-
+const multiply = function(a,b) {
+    return a * b
 };
 
 const power = function() {
