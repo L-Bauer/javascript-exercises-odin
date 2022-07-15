@@ -23,10 +23,16 @@ const power = function(a, b) {
 	return a ** b
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+	const factArray = [];
+    for (let i = 1; i <= a; i++) {
+        factArray.unshift(i);
+    };
+    const factResult = factArray.reduce((total, arrayValues) => {
+        return total * arrayValues
+    }, 1);
+    return factResult
 };
-
 // Do not edit below this line
 module.exports = {
   add,
