@@ -3,8 +3,9 @@ const add = function(a,b) {
 	return c
 };
 
-const subtract = function() {
-	
+const subtract = function(a,b) {
+	const c = a - b
+    return c
 };
 
 const sum = function() {
