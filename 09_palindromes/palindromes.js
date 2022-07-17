@@ -1,12 +1,18 @@
 const palindromes = function (palArray) {
     const revPalArray = [];
-    let palLength = palArray.length;
-    for (let i = 0; i <= palLength; i++) {
+    let palString = palArray.length;
+    for (let i = 0; i < palString; i++) {
         revPalArray.unshift(palArray[i])
     }
-    return revPalArray;
+    const revPalString = revPalArray.join("");
+    if (palArray == revPalString) {
+        return true;
+    }
+    else {
+        return false;
+    }
 };
-console.log(palindromes('racecar'))
+
 
 // Do not edit below this line
 module.exports = palindromes;
